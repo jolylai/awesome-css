@@ -4,12 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Awesome CSS</title>
+    <title>Awsome CSS</title>
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css"
+      rel="stylesheet"
+    />
+    <style>
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .menu,
+      .menu-submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu {
+        background: #3498db;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+      }
+      .menu__item {
+        background: #2f3542;
+        padding: 16px 20px;
+        color: white;
+        position: relative;
+        border-bottom: 1px solid #57606f;
+      }
+      .menu__item:hover {
+        cursor: pointer;
+      }
+      .menu__item::before {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: #ff7f50;
+        top: 0;
+        left: 0;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+      }
+      .menu__item:hover::before {
+        opacity: 1;
+      }
+      .menu__item a {
+        display: block;
+      }
+      .menu-sub__title {
+        padding: 16px 20px;
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative;
+      }
+      .menu-sub__title i {
+        padding-right: 8px;
+      }
+      .menu-sub__title::before {
+        content: " ";
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        bottom: -6px;
+        left: 10px;
+        background: #3498db;
+        transform: rotate(45deg);
+      }
+      .menu-submenu {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease-in-out;
+      }
+      .menu-sub:target .menu-submenu {
+        max-height: 99px;
+      }
+    </style>
   </head>
   <body>
-    <main>
+    <main class="center">
       <ul class="menu">
-        <li class="menu-submenu">fff</li>
+        <li class="menu-sub" id="profile">
+          <a class="menu-sub__title" href="#profile">
+            <i class="far fa-user"></i><span>Profile</span>
+          </a>
+          <ul class="menu-submenu">
+            <li class="menu__item"><a>Post</a></li>
+            <li class="menu__item"><a>Avatar</a></li>
+          </ul>
+        </li>
+        <li class="menu-sub" id="message">
+          <a class="menu-sub__title" href="#message">
+            <i class="far fa-envelope"></i>Message</a
+          >
+          <ul class="menu-submenu">
+            <li class="menu__item"><a>New</a></li>
+            <li class="menu__item"><a>Send</a></li>
+          </ul>
+        </li>
+        <li class="menu-sub" id="setting">
+          <a class="menu-sub__title" href="#setting"
+            ><i class="fas fa-cog"></i>Setting</a
+          >
+          <ul class="menu-submenu">
+            <li class="menu__item"><a>Password</a></li>
+            <li class="menu__item"><a>Language</a></li>
+          </ul>
+        </li>
+        <li class="menu-sub" id="logout">
+          <a class="menu-sub__title" href="#logout"
+            ><i class="fas fa-sign-out-alt"></i>Logout</a
+          >
+          <ul class="menu-submenu">
+            <li class="menu__item"><a>Log In</a></li>
+            <li class="menu__item"><a>Log Out</a></li>
+          </ul>
+        </li>
       </ul>
     </main>
   </body>
