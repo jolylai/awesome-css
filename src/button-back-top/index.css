@@ -1,0 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* padding: 0; */
+  margin: 0;
+}
+main {
+  height: 200vh;
+  background: url("https://gradientjoy.com/200x300?id=30") no-repeat;
+  background-size: cover;
+}
+.back-top {
+  position: fixed;
+  width: 46px;
+  height: 46px;
+  right: 32px;
+  bottom: 32px;
+  box-shadow: 0 5px 15px #34495e;
+  background: #2980b9;
+  border-radius: 30%;
+  line-height: 46px;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.back-top i {
+  transition: 0.2s linear;
+}
+.back-top:hover i {
+  transform: scale(1.3);
+}

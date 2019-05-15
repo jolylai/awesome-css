@@ -10,3 +10,8 @@
 ```
 
 [Palette](https://flatuicolors.com/)
+
+## Menu
+- [Menu](https://jolylai.github.io/awesome-css/src/menu/index.html)
+- [BackTop](https://jolylai.github.io/awesome-css/src/button-back-top/index.html)
+- [Social](https://jolylai.github.io/awesome-css/src/button-social/index.html)

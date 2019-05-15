@@ -54,6 +54,8 @@
       }
       .menu__item a {
         display: block;
+        text-decoration: none;
+        color: white;
       }
       .menu-sub__title {
         padding: 16px 20px;
@@ -88,6 +90,19 @@
   <body>
     <main class="center">
       <ul class="menu">
+        <li class="menu-sub" id="button">
+          <a class="menu-sub__title" href="#button">
+            <i class="far fa-check-square"></i>Button
+          </a>
+          <ul class="menu-submenu">
+            <li class="menu__item">
+              <a href="/src/button-social/index.html">Social</a>
+            </li>
+            <li class="menu__item">
+              <a href="/src/button-back-top/index.html">BackTop</a>
+            </li>
+          </ul>
+        </li>
         <li class="menu-sub" id="profile">
           <a class="menu-sub__title" href="#profile">
             <i class="far fa-user"></i><span>Profile</span>
