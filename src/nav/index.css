@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background: #f1f2f6;
+}
+.nav {
+  list-style: none;
+  text-align: center;
+  background: #2f3542;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  margin: 12px 16px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 1px;
+  bottom: 0;
+  right: 200px;
+  background: #16a085;
+  transition: all 0.4s ease-in-out;
+}
+.nav-item a:hover::before {
+  right: 0;
+  color: red;
+}
