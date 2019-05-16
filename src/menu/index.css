@@ -42,6 +42,8 @@
 }
 .menu__item a {
   display: block;
+  color: white;
+  text-decoration: none;
 }
 .menu-sub__title {
   padding: 16px 20px;
