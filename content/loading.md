@@ -9,7 +9,7 @@ Gatsby is the best
 <div>div</div>
 ```
 
-```js
+```javascript
 // In your gatsby-config.js
 plugins: [
   {

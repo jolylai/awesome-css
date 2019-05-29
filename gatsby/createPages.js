@@ -28,7 +28,6 @@ module.exports.createMdxPages = ({ graphql, actions }) => {
 
         // We'll call `createPage` for each result
         result.data.allMdx.edges.forEach(({ node }) => {
-          console.log("node: ", node)
           createPage({
             // This is the slug we created before
             // (or `node.frontmatter.slug`)
