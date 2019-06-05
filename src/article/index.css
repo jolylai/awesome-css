@@ -1,0 +1,32 @@
+@import "../../theme/base.css";
+.box-shadow {
+  box-shadow: 0 5px 15px #eee;
+}
+.article {
+  display: inline-block;
+  padding: 8px;
+}
+.article-cover {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.article-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(142, 81, 199, 0.25);
+}
+.article-cover:hover::before {
+  background-color: transparent;
+}
+.article-title {
+  padding: 0 0.3em;
+}
+img {
+  display: block;
+}

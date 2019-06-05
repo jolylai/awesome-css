@@ -18,3 +18,4 @@
 - [Social](./src/button-social/index.html)
 - [Sitch](./src/switch/index.html)
 - [Nav](./src/nav/index.html)
+- [Article](./src/article/index.html)
